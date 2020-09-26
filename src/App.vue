@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="home-background"></div>
     <div class="home d-flex">
       <b-container class="d-flex align-items-center justify-content-center flex-column">
         <b-card class="text-center"
@@ -38,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" >
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 body {
@@ -49,6 +50,14 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  &-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+
+  }
 }
 
 .nav-background {
